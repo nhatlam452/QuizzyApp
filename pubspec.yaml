@@ -51,8 +51,9 @@ dependencies:
   flutter_svg: ^2.0.1
   shimmer: ^2.0.0
   easy_separator: ^1.0.1
-
-
+  intl: ^0.17.0
+  intl_translation: 0.18.0
+  shared_preferences: ^2.0.18
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -100,6 +104,9 @@ flutter:
   - family: AppIcons
     fonts:
       - asset: assets/icons/AppIcons.ttf
+  - family: MyFlutterApp
+    fonts:
+      - asset: assets/fonts/MyFlutterApp.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf

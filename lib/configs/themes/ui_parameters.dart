@@ -12,6 +12,5 @@ class UIParameters{
 
   static bool isDarkMode(){
     return Get.isDarkMode?true:false;
-    
   }
 }

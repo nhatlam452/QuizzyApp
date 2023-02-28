@@ -40,11 +40,14 @@ class QuestionController extends GetxController {
   }
 
   Future<void> loadData(QuestionPaper questionPaper) async {
+    print("load");
     questionPaperModel = questionPaper;
     loadingStatus.value = LoadingStatus.loading;
     try {
+      final questionPaperRFf = fireStore.collection(Get.locale?.languageCode=='vi'?'questionPapers-vn':'questionPapers');
+
       final QuerySnapshot<Map<String, dynamic>> questionQuery =
-      await questionPaperRF
+      await questionPaperRFf
           .doc(questionPaper.id)
           .collection("questions")
           .get();
@@ -54,7 +57,7 @@ class QuestionController extends GetxController {
       questionPaper.questions = questions;
       for (Questions _question in questionPaper.questions!) {
         final QuerySnapshot<Map<String, dynamic>> answersQuery =
-        await questionPaperRF
+        await questionPaperRFf
             .doc(questionPaper.id)
             .collection("questions")
             .doc(_question.id)

@@ -1,0 +1,15 @@
+{
+"welcome": "What do you want to learn today ?",
+"greet": "Hello,friend",
+"question": "Question",
+"next" : "Next",
+"remaining" : "Remaining",
+"complete" : "Complete"
+"out of" : "out of"
+"answered" : "answered",
+"congratulation" : "Congratulation",
+"noti-complete" : "Tap bellow question numbers to view correct answers",
+"go home" : "Go home",
+"try" : "Try again"
+
+}

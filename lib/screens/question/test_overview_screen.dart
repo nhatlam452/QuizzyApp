@@ -45,21 +45,11 @@ class TestOverViewScreen extends GetView<QuestionController> {
                         ),
                         Obx(() =>
                             Text(
-                              '${controller.time} Remaining',
+                              '${controller.time} ${'remaining'.tr}',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: UIParameters.isDarkMode()
-                                      ? Theme
-                                      .of(context)
-                                      .textTheme
-                                      .bodyLarge!
-                                      .color
-                                      : UIParameters.isDarkMode()
-                                      ? Theme
-                                      .of(context)
-                                      .textTheme
-                                      .bodyLarge!
-                                      .color
+                                      ? onSurfaceTextColor
                                       : Theme
                                       .of(context)
                                       .primaryColor,
@@ -105,7 +95,7 @@ class TestOverViewScreen extends GetView<QuestionController> {
                   onTap: () {
                     controller.complete();
                   },
-                  title: 'Complete',
+                  title: 'complete'.tr,
                 ),
               ),)
           ],

@@ -14,6 +14,6 @@ class DarkTheme with SubThemeData {
         iconTheme: getIconTheme(),
         cardColor: cardColor,
         textTheme: getTextThemes()
-            .apply(bodyColor: mainTextColor, displayColor: mainTextColor));
+            .apply(bodyColor: primaryDarkColorDark, displayColor: primaryDarkColorDark));
   }
 }

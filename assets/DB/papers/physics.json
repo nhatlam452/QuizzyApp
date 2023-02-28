@@ -1,122 +1,121 @@
 {
     "id": "ppr001",
-    "title": "Physics",
+    "title": "Vật lý",
     "image_url": "",
-    "Description": "Basic physics Multiple Choice Questions (MCQ) to practice basic physics quiz answers",
+    "description": "Câu hỏi trắc nghiệm vật lý cơ bản để luyện tập và trả lời",
     "time_seconds": 900,
-    
     "questions": [
         {
             "id": "ppr001q001",
-            "question": "Which one of the following is a good conductor of electricity?",
+            "question": "Trong số các chất sau, chất nào là chất dẫn điện tốt?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "Glass"
+                    "answer": "Kính"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "Human body"
+                    "answer": "Cơ thể con người"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "Ebonite"
+                    "answer": "Ebonit"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "Shellac"
+                    "answer": "Lac"
                 }
             ],
             "correct_answer": "B"
         },
         {
             "id": "ppr001q002",
-            "question": "Which one of the following has maximum energy?",
+            "question": "Trong số các chất sau, chất nào có năng lượng lớn nhất?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "Yellow light"
+                    "answer": "Ánh sáng vàng"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "Green light"
+                    "answer": "Ánh sáng xanh lá cây"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "Violet light"
+                    "answer": "Ánh sáng tím"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "Red light"
+                    "answer": "Ánh sáng đỏ"
                 }
             ],
             "correct_answer": "C"
         },
         {
             "id": "ppr001q003",
-            "question": "Which law is involved in the act of cleaning a carpet by beating it with a stick?",
+            "question": "Định luật nào liên quan đến hành động làm sạch thảm bằng cách đánh nó bằng một cây gậy?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "First law of motion"
+                    "answer": "Định luật thứ nhất của chuyển động"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "Second law of motion"
+                    "answer": "Định luật thứ hai của chuyển động"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "Law of conservation of mass"
+                    "answer": "Định luật bảo toàn khối lượng"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "Law of conservation of energy"
+                    "answer": "Định luật bảo toàn năng lượng"
                 }
             ],
             "correct_answer": "C"
         },
         {
             "id": "ppr001q004",
-            "question": "which of the following is a unit of eletric current:",
+            "question": "Trong số các đơn vị sau, đơn vị nào là đơn vị dòng điện:",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "ohm"
+                    "answer": "Ohm"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "volt"
+                    "answer": "Volt"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "watt"
+                    "answer": "Watt"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "amp"
+                    "answer": "Amp"
                 }
             ],
             "correct_answer": "D"
         },
         {
             "id": "ppr001q005",
-            "question": "When an object is in motion, it's ................... must change.?",
+            "question": "Khi một vật đang chuyển động, ................... của nó phải đổi thay đổi.?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "Shapen"
+                    "answer": "Hình dạng"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "Size"
+                    "answer": "Kích thước"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "Acceleration"
+                    "answer": "Sự tăng tốc"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "Position"
+                    "answer": "Vị trí"
                 }
             ],
             "correct_answer": "D"

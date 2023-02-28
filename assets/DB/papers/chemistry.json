@@ -1,105 +1,105 @@
 {
     "id": "ppr002",
-    "title": "Chemistry",
+    "title": "Hóa học",
     "image_url": "",
-    "Description": "Basic Chemistry Multiple Choice Questions (MCQ) to practice basic Chemistry quiz answers",
+    "description": "Câu hỏi trắc nghiệm Hóa học cơ bản (MCQ) để luyện tập trắc nghiệm Hóa học cơ bản",
     "time_seconds": 900,
     "questions": [
         {
             "id": "ppr002q001",
-            "question": "What is the chemical symbol for carbon?",
+            "question": "Ký hiệu hóa học cho nguyên tố cacbon là gì?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "C"
+                    "answer": "C"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "Ca"
+                    "answer": "Ca"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "Cn"
+                    "answer": "Cn"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "Crn"
+                    "answer": "Crn"
                 }
             ],
             "correct_answer": "A"
         },
         {
             "id": "ppr002q002",
-            "question": "Molecules bonded together make up atoms.",
+            "question": "Các phân tử liên kết với nhau tạo thành các nguyên tử.",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "True"
+                    "answer": "Đúng"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "False"
+                    "answer": "Sai"
                 }
             ],
             "correct_answer": "B"
         },
         {
             "id": "ppr002q003",
-            "question": "When we combined vinegar and baking soda and created carbon dioxide what was the product?",
+            "question": "Khi ta trộn giấm và muối nở và tạo thành khí carbon dioxide, sản phẩm tạo thành là gì?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "vinegar"
+                    "answer": "giấm"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "carbon dioxide and baking soda"
+                    "answer": "carbon dioxide và muối nở"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "carbon dioxide"
+                    "answer": "carbon dioxide"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "vinegar and baking soda"
+                    "answer": "giấm và muối nở"
                 }
             ],
             "correct_answer": "C"
         },
         {
             "id": "ppr002q004",
-            "question": "which of the following is a unit of eletric current:",
+            "question": "Đơn vị đo dòng điện là gì?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "ohm"
+                    "answer": "ôm"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "volt"
+                    "answer": "vôn"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "watt"
+                    "answer": "wát"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "amp"
+                    "answer": "ampe"
                 }
             ],
             "correct_answer": "D"
         },
         {
             "id": "ppr002q005",
-            "question": "In a chemical reaction or change a new substance is not created.?",
+            "question": "Trong phản ứng hoá học hoặc thay đổi, không tạo ra chất mới?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "true"
+                    "answer": "đúng"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "false"
+                    "answer": "sai"
                 }
             ],
             "correct_answer": "B"

@@ -40,7 +40,7 @@ class MainButton extends StatelessWidget {
                           title,
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Get.isDarkMode?onSurfaceTextColor:Theme.of(context).primaryColor),
+                              color: Theme.of(context).primaryColor),
                         ),
                       )),
             ),

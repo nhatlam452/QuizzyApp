@@ -39,17 +39,17 @@ class ResultScreen extends GetView<QuestionController> {
                     SvgPicture.asset('assets/images/bulb.svg'),
                      Padding(
                        padding: const EdgeInsets.only(top: 20 , bottom: 5),
-                       child: Text("Congratulation",
+                       child: Text("congratulation".tr,
                        style: headerText.copyWith(color: _color),),
                      ),
-                    Text("You have ${controller.points} point",
+                    Text('${"youhave".tr} ${controller.points}${"point".tr}',
                     style: TextStyle(color: _color),
                     ),
                     const SizedBox(
                       height: 25,
                     ),
-                    const Text(
-                      'Tap bellow question numbers to view correct answers',
+                     Text(
+                      'noti-complete'.tr,
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
@@ -98,7 +98,7 @@ class ResultScreen extends GetView<QuestionController> {
                         controller.tryAgain();
                       },
                       color: Colors.blueGrey,
-                        title: 'Try again',
+                        title: 'try'.tr,
                       ),
                     ),
                     SizedBox(width: 5,),
@@ -107,7 +107,7 @@ class ResultScreen extends GetView<QuestionController> {
                         controller.saveTextRs();
 
                       },
-                        title: 'Go home',
+                        title: 'go_home'.tr,
                       ),
                     )
                   ],

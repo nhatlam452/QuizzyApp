@@ -61,7 +61,7 @@ class HomeScreen extends GetView<MyZoomDrawerController> {
                                   AppIcons.peace,
                                 ),
                                 Text(
-                                  "Hello , friend",
+                                  'greet'.tr,
                                   style: detailText.copyWith(
                                       color: onSurfaceTextColor),
                                 )
@@ -69,7 +69,7 @@ class HomeScreen extends GetView<MyZoomDrawerController> {
                             ),
                           ),
                           Text(
-                            "What do you want to learn today?",
+                            'welcome'.tr,
                             style: headerText,
                           )
                         ],

@@ -1,6 +1,5 @@
 import "package:booking_app/configs/themes/app_colors.dart";
 import "package:flutter/material.dart";
-
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -9,6 +8,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
+
         decoration: BoxDecoration(gradient: mainGradient()),
         child: Image.asset("assets/images/app_splash_logo.png",width: 200,height: 200,),
       ),

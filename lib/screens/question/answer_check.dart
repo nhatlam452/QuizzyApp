@@ -17,7 +17,7 @@ class AnswerCheckScreen extends GetView<QuestionController> {
       extendBodyBehindAppBar: true,
       appBar: CustomAppBar(
         titleWidget: Obx(() => Text(
-              'Question ${(controller.questionIndex.value + 1).toString().padLeft(2, "0")}',
+              'question'.tr + '${(controller.questionIndex.value + 1).toString().padLeft(2, "0")}',
               style: appBarTS,
             )),
         showActionIcons: true,

@@ -1,121 +1,121 @@
 {
     "id": "ppr003",
-    "title": "Maths",
+    "title": "Toán học",
     "image_url": "",
-    "Description": "Basic Maths Multiple Choice Questions (MCQ) to practice basic Maths quiz answers",
+    "description": "Câu hỏi trắc nghiệm toán cơ bản (MCQ) để thực hành các câu trả lời bài kiểm tra toán cơ bản",
     "time_seconds": 900,
     "questions": [
         {
             "id": "ppr003q001",
-            "question": "Jenna has 82 apples. She gives Sam 28 apples. How many apples does Jenna have now?",
+            "question": "Jenna có 82 quả táo. Cô ấy đưa cho Sam 28 quả táo. Bây giờ Jenna có bao nhiêu quả táo?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "45"
+                    "answer": "45"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "108"
+                    "answer": "108"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "54"
+                    "answer": "54"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "37"
+                    "answer": "37"
                 }
             ],
             "correct_answer": "C"
         },
         {
             "id": "ppr003q002",
-            "question": "Max and Billy went to a farm! Max collected 18 eggs and Billy collected 29 eggs. How many eggs did they collect in total.",
+            "question": "Max và Billy đã đến một trang trại! Max nhặt được 18 quả trứng và Billy nhặt được 29 quả trứng. Tổng cộng họ thu được bao nhiêu quả trứng.",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "74"
+                    "answer": "74"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "22"
+                    "answer": "22"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "80"
+                    "answer": "80"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "47"
+                    "answer": "47"
                 }
             ],
             "correct_answer": "D"
         },
         {
             "id": "ppr003q003",
-            "question": "what is 2/10 +15/100 equal?",
+            "question": "2/10 +15/100 bằng bao nhiêu?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "17"
+                    "answer": "17"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "35/100"
+                    "answer": "35/100"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "30/100"
+                    "answer": "30/100"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "17/100"
+                    "answer": "17/100"
                 }
             ],
             "correct_answer": "B"
         },
         {
             "id": "ppr003q004",
-            "question": "How many times greater is 2,340 than 234?",
+            "question": "2340 lớn hơn bao nhiêu lần so với 234?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "20 times"
+                    "answer": "20 lần"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "100 times"
+                    "answer": "100 lần"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "10 times"
+                    "answer": "10 lần"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "1 time"
+                    "answer": "1 lần"
                 }
             ],
             "correct_answer": "C"
         },
         {
             "id": "ppr003q005",
-            "question": "How many sides does a quadrilateral have?",
+            "question": "Một tứ giác có bao nhiêu cạnh?",
             "answers": [
                 {
                     "identifier": "A",
-                    "Answer": "5"
+                    "answer": "5"
                 },
                 {
                     "identifier": "B",
-                    "Answer": "3"
+                    "answer": "3"
                 },
                 {
                     "identifier": "C",
-                    "Answer": "2"
+                    "answer": "2"
                 },
                 {
                     "identifier": "D",
-                    "Answer": "4"
+                    "answer": "4"
                 }
             ],
             "correct_answer": "D"

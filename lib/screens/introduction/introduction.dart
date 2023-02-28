@@ -11,7 +11,7 @@ class AppIntroduction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String slogan =
-        "This is study app . You can use it as you want . If you understand how it works you would be able to scale it.";
+        "slogan".tr;
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(gradient: mainGradient()),

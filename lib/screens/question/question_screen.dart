@@ -33,7 +33,7 @@ class QuestionScreen extends GetView<QuestionController> {
           ),
           showActionIcons: true,
           titleWidget: Obx(() => Text(
-                'Question ${(controller.questionIndex.value + 1).toString().padLeft(2, '0')}',
+                'question'.tr +'${(controller.questionIndex.value + 1).toString().padLeft(2, '0')}',
                 style: appBarTS,
               ))),
       body: BackgroundDercoration(
@@ -57,6 +57,8 @@ class QuestionScreen extends GetView<QuestionController> {
                             GetBuilder<QuestionController>(
                                 id: 'answer_list',
                                 builder: (context) {
+                                  print("bloo" +  controller.currentQuestion
+                                      .value!.answers[0].toJson().toString());
                                   return ListView.separated(
                                     shrinkWrap: true,
                                     padding: const EdgeInsets.only(top: 25),
@@ -106,9 +108,7 @@ class QuestionScreen extends GetView<QuestionController> {
                                 },
                                 child: Icon(
                                   Icons.arrow_back_ios,
-                                  color: Get.isDarkMode
-                                      ? onSurfaceTextColor
-                                      : Theme.of(context).primaryColor,
+                                  color: Theme.of(context).primaryColor,
                                 ),
                               ),
                             )),
@@ -123,8 +123,8 @@ class QuestionScreen extends GetView<QuestionController> {
                                       : controller.nextQuestion();
                                 },
                                 title: controller.isLastQuestion
-                                    ? 'Complete'
-                                    : 'Next',
+                                    ? 'complete'.tr
+                                    : 'next'.tr,
                               )),
                         )
                       ],

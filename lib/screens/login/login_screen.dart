@@ -28,8 +28,8 @@ class LoginScreen extends GetView<AuthController> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 60),
-              child: const Text(
-                "If you are not willing to learn, no one can help you. If you are determined to learn, no one can stop you",
+              child:  Text(
+                'slogan_2'.tr,
                 style: TextStyle(
                     color: onSurfaceTextColor, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
@@ -48,7 +48,7 @@ class LoginScreen extends GetView<AuthController> {
                       child: SvgPicture.asset("assets/icons/google.svg")),
                   Center(
                     child: Text(
-                      "Sign in with Google",
+                      "siGG".tr,
                       style: TextStyle(
                           color: Theme.of(context).primaryColor,
                           fontWeight: FontWeight.bold),

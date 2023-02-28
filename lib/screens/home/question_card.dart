@@ -77,7 +77,7 @@ class QuestionCard extends GetView<QuestionPaperController> {
                                       : Theme.of(context).primaryColor,
                                 ),
                                 text: Text(
-                                  '${model.questionCount} question(s)',
+                                  '${model.questionCount}'+ 'question(s)'.tr,
                                   style: detailText.copyWith(
                                       color: Get.isDarkMode
                                           ? Colors.white

@@ -1,8 +1,18 @@
+import "dart:io";
+
 import "package:booking_app/configs/themes/app_colors.dart";
+import "package:booking_app/configs/themes/app_icon.dart";
 import "package:booking_app/configs/themes/ui_parameters.dart";
+import "package:booking_app/controller/question_paper/question_paper_controller.dart";
+import "package:booking_app/controller/question_paper/queston_controller.dart";
+import "package:booking_app/controller/theme_controller.dart";
 import "package:booking_app/controller/zoom_drawer_controller.dart";
 import "package:flutter/material.dart";
+import "package:flutter/services.dart";
 import "package:get/get.dart";
+
+import "../../lang/service/translate_service.dart";
+import "../../main.dart";
 
 class MenuScreen extends GetView<MyZoomDrawerController> {
   const MenuScreen({Key? key}) : super(key: key);
@@ -43,17 +53,65 @@ class MenuScreen extends GetView<MyZoomDrawerController> {
                                 fontSize: 18,
                                 color: onSurfaceTextColor),
                           )),
-                    const Spacer(flex: 1,),
-                    _DrawerButton(icon: Icons.web, label: "website",onPressed: ()=>controller.website(),),
-                    _DrawerButton(icon: Icons.facebook, label: "facebook",onPressed: ()=>controller.website(),),
+                    const Spacer(
+                      flex: 1,
+                    ),
+                    _DrawerButton(
+                      icon: Icons.language,
+                      label: "language".tr,
+                      onPressed: () {},
+                    ),
                     Padding(
                       padding: EdgeInsets.only(left: 25),
-                      child: _DrawerButton(icon: Icons.email, label: "email",onPressed: ()=>controller.email(),),
                     ),
-                    const Spacer(flex: 4,),
-
-                    _DrawerButton(icon: Icons.logout, label: "logout",onPressed: ()=>controller.signOut(),),
-
+                    Padding(
+                      padding: EdgeInsets.only(left: 25),
+                      child: _DrawerButton(
+                        icon: AppIcons.vietnam,
+                        label: "Việt Nam",
+                        onPressed: () async {
+                          Get.find<ThemeController>().saveLocale(Locale('vi', 'VN'));
+                          Get.find<QuestionPaperController>().getAllPaper();
+                        },
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 25),
+                      child: _DrawerButton(
+                        icon: AppIcons.united,
+                        label: "English",
+                        onPressed: () async {
+                          Get.find<ThemeController>().saveLocale(Locale('en', 'US'));
+                          Get.find<QuestionPaperController>().getAllPaper();
+                        },
+                      ),
+                    ),
+                    _DrawerButton(
+                      icon: Icons.web,
+                      label: "website",
+                      onPressed: () => controller.website(),
+                    ),
+                    _DrawerButton(
+                      icon: Icons.facebook,
+                      label: "facebook",
+                      onPressed: () => controller.website(),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 25),
+                      child: _DrawerButton(
+                        icon: Icons.email,
+                        label: "email",
+                        onPressed: () => controller.email(),
+                      ),
+                    ),
+                    const Spacer(
+                      flex: 4,
+                    ),
+                    _DrawerButton(
+                      icon: Icons.logout,
+                      label: "logout".tr,
+                      onPressed: () => controller.signOut(),
+                    ),
                   ],
                 ),
               )
@@ -66,7 +124,9 @@ class MenuScreen extends GetView<MyZoomDrawerController> {
 }
 
 class _DrawerButton extends StatelessWidget {
-  const _DrawerButton({Key? key, required this.icon, required this.label, this.onPressed}) : super(key: key);
+  const _DrawerButton(
+      {Key? key, required this.icon, required this.label, this.onPressed})
+      : super(key: key);
   final IconData icon;
   final String label;
   final VoidCallback? onPressed;
@@ -80,9 +140,7 @@ class _DrawerButton extends StatelessWidget {
         size: 15,
         color: onSurfaceTextColor,
       ),
-      label: Text(label,style: TextStyle(
-    color: onSurfaceTextColor
-    )),
+      label: Text(label, style: TextStyle(color: onSurfaceTextColor)),
     );
   }
 }

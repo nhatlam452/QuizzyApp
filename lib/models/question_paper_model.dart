@@ -11,23 +11,24 @@ class QuestionPaper {
 
   QuestionPaper(
       {required this.id,
-      required this.title,
-      required this.imageUrl,
-      required this.description,
-      required this.timeSeconds,
-      required this.questionCount,
-      this.questions});
+        required this.title,
+        required this.imageUrl,
+        required this.description,
+        required this.timeSeconds,
+        required this.questionCount,
+        this.questions});
 
   QuestionPaper.fromJson(Map<String, dynamic> json)
       : id = json['id'] as String,
         title = json['title'] as String,
         imageUrl = json['image_url'] as String,
-        description = json['Description'] as String,
+        description = json['description'] as String,
         timeSeconds = json['time_seconds'],
         questionCount = 0,
         questions = (json['questions'] as List)
             .map((dynamic e) => Questions.fromJson(e as Map<String, dynamic>))
-            .toList();
+            .toList() ;
+
 
   QuestionPaper.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
       : id = json.id,
@@ -45,7 +46,7 @@ class QuestionPaper {
     data['id'] = this.id;
     data['title'] = this.title;
     data['image_url'] = this.imageUrl;
-    data['Description'] = this.description;
+    data['description'] = this.description;
     data['time_seconds'] = this.timeSeconds;
 
     return data;
@@ -61,15 +62,15 @@ class Questions {
 
   Questions(
       {required this.id,
-      required this.question,
-      required this.answers,
-      this.correctAnswer});
+        required this.question,
+        required this.answers,
+        this.correctAnswer});
 
   Questions.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         question = json['question'],
         answers =
-            (json['answers'] as List).map((e) => Answers.fromJson(e)).toList(),
+        ((json['answers'] ?? [] ) as List).map((e) => Answers.fromJson(e)).toList()??[],
         correctAnswer = json['correct_answer'];
 
   Questions.fromSnapshot(QueryDocumentSnapshot<Map<String, dynamic>> snapshot)
@@ -98,7 +99,7 @@ class Answers {
 
   Answers.fromJson(Map<String, dynamic> json)
       : identifier = json['identifier'],
-        answer = json['Answer'];
+        answer = json['answer'];
 
   Answers.fromSnapshot(QueryDocumentSnapshot<Map<String, dynamic>> snapshot)
       : identifier = snapshot['identifier'] as String?,

@@ -49,7 +49,7 @@ class QuestionNumberCard extends StatelessWidget {
           child: Text(
             '${index+1}',
             style: TextStyle(
-              color: status==AnswerStatus.not?Theme.of(context).primaryColor:null
+              color: status==AnswerStatus.not?(UIParameters.isDarkMode()?onSurfaceTextColor:Theme.of(context).primaryColor):null
             ),
           ),
         ),

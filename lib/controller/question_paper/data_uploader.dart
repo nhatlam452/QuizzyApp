@@ -28,8 +28,11 @@ class DataUpLoader extends GetxController{
     List<QuestionPaper> questionPaper =  [];
     for(var paper in papersInAssets){
       String stringPaperContent = await rootBundle.loadString(paper);
+      print(stringPaperContent);
       questionPaper.add(QuestionPaper.fromJson(json.decode(stringPaperContent)));
     }
+
+
     var batch = fireStore.batch();
     for(var paper in questionPaper){
       batch.set(questionPaperRF.doc(paper.id), {
@@ -58,3 +61,5 @@ class DataUpLoader extends GetxController{
     loadingStatus.value = LoadingStatus.complete;
   }
 }
+
+

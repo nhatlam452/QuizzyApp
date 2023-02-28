@@ -1,4 +1,3 @@
-
 import 'package:booking_app/configs/themes/app_light_theme.dart';
 import 'package:booking_app/controller/theme_controller.dart';
 import 'package:booking_app/data_uploadder_screen.dart';
@@ -11,27 +10,46 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'bindings/initial_bindings.dart';
+import 'lang/service/translate_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await initServices();
   InitialBindings().dependencies();
   runApp(MyApp());
 }
+
+Future<void> initServices() async {
+  await Get.putAsync(
+      () => TranslationService().init()); // initialize TranslationService
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return
-      GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: Get.find<ThemeController>().lightTheme,
-      getPages: AppRoutes.routes(),
+    return FutureBuilder<Locale>(
+      future: Get.find<ThemeController>().getSavedLocale(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return GetMaterialApp(
+            translations: TranslationService(),
+            locale: snapshot.data,
+            fallbackLocale: Locale("en","US"),
+            debugShowCheckedModeBanner: false,
+            theme: Get.find<ThemeController>().lightTheme,
+            darkTheme: Get.find<ThemeController>().darkTheme,
+            getPages: AppRoutes.routes(),
+          );
+        } else {
+          return Center(child: CircularProgressIndicator());
+        }
+      },
     );
   }
 }
-
 
 // Future<void> main() async{
 //   WidgetsFlutterBinding.ensureInitialized();
